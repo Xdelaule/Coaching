@@ -1,0 +1,17 @@
+Coaching\UserBundle\Entity\coaching:
+  exclusion_policy: ALL
+  xml_root_name: coaching
+  properties:
+    id:
+      expose: true
+    teacher:
+      expose: true
+    student:
+      expose: true
+    startdate:
+      expose: true
+    endate:
+      expose: true
+    status:
+      expose: true
+      
