@@ -1,0 +1,12 @@
+Coaching\UserBundle\Entity\Message:
+  exclusion_policy: ALL
+  xml_root_name: message
+  properties:
+    id:
+      expose: true
+    author:
+      expose: true
+    thread:
+      expose: true
+    content:
+      expose: true

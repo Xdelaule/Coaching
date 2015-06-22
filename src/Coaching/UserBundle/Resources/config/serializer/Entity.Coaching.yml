@@ -1,4 +1,4 @@
-Coaching\UserBundle\Entity\coaching:
+Coaching\UserBundle\Entity\Coaching:
   exclusion_policy: ALL
   xml_root_name: coaching
   properties:

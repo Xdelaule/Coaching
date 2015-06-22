@@ -1,0 +1,16 @@
+Coaching\UserBundle\Entity\Thread:
+  exclusion_policy: ALL
+  xml_root_name: thread
+  properties:
+    id:
+      expose: true
+    creator:
+      expose: true
+    interlocutor:
+      expose: true
+    subject:
+      expose: true
+    date:
+      expose: true
+    coaching:
+      expose: true

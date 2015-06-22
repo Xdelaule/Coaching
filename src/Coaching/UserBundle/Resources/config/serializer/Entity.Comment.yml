@@ -1,0 +1,16 @@
+Coaching\UserBundle\Entity\Comment:
+  exclusion_policy: ALL
+  xml_root_name: comment
+  properties:
+    id:
+      expose: true
+    author:
+      expose: true
+    receptor:
+      expose: true
+    coaching:
+      expose: true
+    grade:
+      expose: true
+    content:
+      expose: true
