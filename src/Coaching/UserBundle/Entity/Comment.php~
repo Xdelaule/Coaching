@@ -1,0 +1,60 @@
+<?php
+
+namespace Coaching\UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Comment
+ *
+ * @ORM\Table(name="comment")
+ * @ORM\Entity
+ */
+class Comment
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="author_id", type="bigint", nullable=false)
+     */
+    private $authorId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="receptor_id", type="bigint", nullable=false)
+     */
+    private $receptorId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="coaching_id", type="bigint", nullable=false)
+     */
+    private $coachingId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="grade", type="integer", nullable=false)
+     */
+    private $grade;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text", nullable=false)
+     */
+    private $content;
+
+
+}

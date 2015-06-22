@@ -1,0 +1,60 @@
+<?php
+
+namespace Coaching\UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Thread
+ *
+ * @ORM\Table(name="thread")
+ * @ORM\Entity
+ */
+class Thread
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="creator_id", type="bigint", nullable=false)
+     */
+    private $creatorId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="interlocutor_id", type="bigint", nullable=false)
+     */
+    private $interlocutorId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="subject", type="string", length=100, nullable=true)
+     */
+    private $subject;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=false)
+     */
+    private $date;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="coaching_id", type="bigint", nullable=false)
+     */
+    private $coachingId;
+
+
+}

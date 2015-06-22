@@ -1,0 +1,95 @@
+<?php
+
+namespace Coaching\UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * User
+ *
+ * @ORM\Table(name="user", uniqueConstraints={@ORM\UniqueConstraint(name="username", columns={"username", "email"})})
+ * @ORM\Entity
+ */
+class User
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=50, nullable=false)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=50, nullable=false)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=50, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="idriot", type="string", length=50, nullable=false)
+     */
+    private $idriot;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="skype", type="string", length=50, nullable=true)
+     */
+    private $skype;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mumble", type="string", length=50, nullable=true)
+     */
+    private $mumble;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="twitter", type="string", length=50, nullable=true)
+     */
+    private $twitter;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="teamspeak", type="string", length=50, nullable=true)
+     */
+    private $teamspeak;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="twitch", type="string", length=50, nullable=true)
+     */
+    private $twitch;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="league", type="string", length=50, nullable=false)
+     */
+    private $league;
+
+
+}

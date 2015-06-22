@@ -1,0 +1,60 @@
+<?php
+
+namespace Coaching\UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Coaching
+ *
+ * @ORM\Table(name="coaching")
+ * @ORM\Entity
+ */
+class Coaching
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="teacher_id", type="bigint", nullable=false)
+     */
+    private $teacherId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="student_id", type="bigint", nullable=false)
+     */
+    private $studentId;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="start_date", type="date", nullable=false)
+     */
+    private $startDate;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="end_date", type="date", nullable=false)
+     */
+    private $endDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="status", type="integer", nullable=false)
+     */
+    private $status;
+
+
+}

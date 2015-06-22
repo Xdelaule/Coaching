@@ -1,0 +1,41 @@
+Coaching:
+    type: entity
+    table: coaching
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        teacherId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: teacher_id
+        studentId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: student_id
+        startDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: start_date
+        endDate:
+            type: date
+            nullable: false
+            comment: ''
+            column: end_date
+        status:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+    lifecycleCallbacks: {  }

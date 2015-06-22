@@ -1,0 +1,42 @@
+Thread:
+    type: entity
+    table: thread
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        creatorId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: creator_id
+        interlocutorId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: interlocutor_id
+        subject:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        date:
+            type: datetime
+            nullable: false
+            comment: ''
+        coachingId:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: coaching_id
+    lifecycleCallbacks: {  }

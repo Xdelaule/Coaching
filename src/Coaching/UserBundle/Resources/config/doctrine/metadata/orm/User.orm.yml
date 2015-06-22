@@ -1,0 +1,79 @@
+User:
+    type: entity
+    table: user
+    uniqueConstraints:
+        username:
+            columns:
+                - username
+                - email
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        password:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        idriot:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        skype:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        mumble:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        twitter:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        teamspeak:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        twitch:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        league:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }
