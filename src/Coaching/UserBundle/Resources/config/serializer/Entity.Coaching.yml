@@ -9,8 +9,10 @@ Coaching\UserBundle\Entity\coaching:
     student:
       expose: true
     startDate:
+      serialized_name: start_date
       expose: true
     endDate:
+      serialized_name: end_date
       expose: true
     status:
       expose: true
