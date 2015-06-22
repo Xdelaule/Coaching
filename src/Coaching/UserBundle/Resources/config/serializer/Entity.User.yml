@@ -1,0 +1,24 @@
+Coaching\UserBundle\Entity\User:
+  exclusion_policy: ALL
+  xml_root_name: user
+  properties:
+    id:
+      expose: true
+    username:
+      expose: true
+    password:
+      expose: true
+    email:
+      expose: true
+    idriot:
+      expose: true
+    skype:
+      expose: true
+    mumble:
+      expose: true
+    teamspeak:
+      expose: true
+    twitch:
+      expose: true
+    league:
+      expose: true
